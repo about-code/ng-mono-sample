@@ -1,6 +1,6 @@
 {
   "name": "@about-code/slush-ng-monorepo-sample-app-theme-default",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.10",
   "description": "Sample app generated with slush-ng-monorepo",
   "main": "index.js",
   "scripts": {},
