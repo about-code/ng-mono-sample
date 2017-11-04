@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@foo/slush-ng-monorepo-sample-project",
-  "version": "1.0.0-alpha.10",
+  "version": "1.0.0-alpha.11",
   "description": "Sample app generated with https://github.com/about-code/slush-ng-monorepo",
   "dependencies": {
     "@angular/animations": "^5.0.0",
