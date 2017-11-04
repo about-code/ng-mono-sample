@@ -1,6 +1,6 @@
-# slush-ng-monorepo-sample-app
+# @foo/slush-ng-monorepo-sample-project
 
-Sample app generated with slush-ng-monorepo
+Sample app generated with https://github.com/about-code/slush-ng-monorepo
 
 ## App development
 

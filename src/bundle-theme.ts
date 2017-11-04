@@ -1,2 +1,2 @@
 // Import your theme's 'index.scss' here.
-import "@about-code/slush-ng-monorepo-sample-app-theme-default/index.scss";
+import "@foo/slush-ng-monorepo-sample-app-theme-default/index.scss";

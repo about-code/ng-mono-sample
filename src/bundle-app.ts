@@ -1,1 +1,1 @@
-import "@about-code/slush-ng-monorepo-sample-app/main-aot";
+import "@foo/slush-ng-monorepo-sample-app/main-aot";

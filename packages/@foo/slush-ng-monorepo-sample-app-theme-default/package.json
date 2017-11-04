@@ -1,0 +1,13 @@
+{
+  "name": "@foo/slush-ng-monorepo-sample-app-theme-default",
+  "version": "1.0.0-alpha.11",
+  "description": "Sample app generated with https://github.com/about-code/slush-ng-monorepo",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "author": "@about-code",
+  "license": "SEE LICENSE IN LICENSE.txt"
+}

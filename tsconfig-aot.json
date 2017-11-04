@@ -10,17 +10,13 @@
         "removeComments": true,
         "experimentalDecorators": true,
         "baseUrl": ".",
-        //"lib": ["es2015", "dom"],
+        "lib": ["es2015", "dom"],
         "paths": {
-            "@about-code/*": ["./node_modules/@about-code/*", "./packages/@about-code/*"]
+            "@foo/*": ["./node_modules/@foo/*", "./packages/@foo/*"]
         }
     },
-    "files": [
-        "./packages/@about-code/slush-ng-monorepo-sample-app/main-aot.ts",
-        "./packages/@about-code/slush-ng-monorepo-sample-app/src/AppModule.ts"
-    ],
     "angularCompilerOptions": {
-        "genDir": ".",
+        "entryModule": "./packages/@foo/slush-ng-monorepo-sample-app/src/AppModule#AppModule",
         "skipMetadataEmit": true
     }
 }

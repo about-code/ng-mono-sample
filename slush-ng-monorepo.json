@@ -1,0 +1,17 @@
+{
+    "project-app": {
+        "proj_name": "slush-ng-monorepo-sample",
+        "app_ctx_root": "/",
+        "app_title": "slush-ng-monorepo-sample",
+        "pkg_scope": "@foo",
+        "pkg_description": "Sample app generated with https://github.com/about-code/slush-ng-monorepo",
+        "pkg_version": "1.0.0-alpha.11",
+        "pkg_author": "@about-code",
+        "bool_default_pkgs": true,
+        "bool_install_deps": false,
+        "confirm": true,
+        "pkg_name": "slush-ng-monorepo-sample-app",
+        "pkg_fullname": "@foo/slush-ng-monorepo-sample-app",
+        "proj_pkg_fullname": "@foo/slush-ng-monorepo-sample-project"
+    }
+}
