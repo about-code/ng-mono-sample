@@ -13,5 +13,14 @@
         "pkg_name": "slush-ng-monorepo-sample-app",
         "pkg_fullname": "@foo/slush-ng-monorepo-sample-app",
         "proj_pkg_fullname": "@foo/slush-ng-monorepo-sample-project"
+    },
+    "package-feature": {
+        "pkg_fullname": "@foo/foo-feature",
+        "pkg_description": "Demonstrating a feature package",
+        "pkg_version": "1.0.0",
+        "pkg_author": "@about-code",
+        "confirm": true,
+        "pkg_scope": "@foo",
+        "pkg_name": "foo-feature"
     }
 }
