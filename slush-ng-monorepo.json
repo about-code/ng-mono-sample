@@ -22,5 +22,21 @@
         "confirm": true,
         "pkg_scope": "@foo",
         "pkg_name": "foo-feature"
+    },
+    "class-ng-module": {
+        "exported_name": "FeatureModule",
+        "pkg_fullname": "@foo/foo-feature",
+        "bool_export": true,
+        "confirm": true,
+        "internal_path": "./src/FeatureModule"
+    },
+    "class-ng-component": {
+        "comp_name": "FeatureComponent",
+        "comp_selector": "feat-comp",
+        "comp_route": "feature",
+        "pkg_fullname": "@foo/foo-feature",
+        "confirm": true,
+        "comp_class": "FeatureComponent",
+        "comp_file": "FeatureComponent"
     }
 }
