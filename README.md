@@ -1,4 +1,4 @@
-# @foo/slush-ng-monorepo-sample-project
+# @foo/ng-mono-sample-project
 
 Sample project generated with https://github.com/about-code/ng-mono
 

@@ -1,7 +1,7 @@
 {
   "name": "@foo/foo-feature",
   "version": "1.0.0",
-  "author": "@about-code",
+  "author": "anonymous",
   "license": "SEE LICENSE IN LICENSE.txt",
   "description": "",
   "main": "@foo/foo-feature.es5.umd.js",

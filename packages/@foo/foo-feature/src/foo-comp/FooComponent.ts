@@ -2,10 +2,10 @@ import {Component, OnInit, OnDestroy} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-    selector: "feat-comp",
-    templateUrl: "./FeatureComponent.html"
+    selector: "foo-comp",
+    templateUrl: "./FooComponent.html"
 })
-export class FeatureComponent implements OnInit, OnDestroy {
+export class FooComponent implements OnInit, OnDestroy {
 
     private _route: ActivatedRoute = null;
 

@@ -1,0 +1,13 @@
+{
+  "name": "@foo/ng-mono-sample-app-theme-default",
+  "version": "1.0.0-alpha.14",
+  "description": "Sample project generated with https://github.com/about-code/ng-mono",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "author": "anonymous",
+  "license": "SEE LICENSE IN LICENSE.txt"
+}

@@ -5,7 +5,7 @@ import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 
 import {RoutesModule} from "./RoutesModule";
-import {FeatureComponent} from "./feat-comp/FeatureComponent";
+import {FooComponent} from "./foo-comp/FooComponent";
 // :: import {{{comp_class}}} from "./{{comp_selector}}/{{comp_class}}";
 
 @NgModule({
@@ -16,11 +16,11 @@ import {FeatureComponent} from "./feat-comp/FeatureComponent";
         , RoutesModule
     ],
     declarations: [
-        FeatureComponent
+        FooComponent
         // :: , {{comp_class}}
     ],
     exports: [
-        FeatureComponent
+        FooComponent
         // :: , {{comp_class}}
     ],
     providers: []

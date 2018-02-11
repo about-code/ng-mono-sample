@@ -1,6 +1,6 @@
 # @foo/foo-feature
 
-Demonstrating a feature package
+Demo of a feature package
 
 # How to consume in your app
 

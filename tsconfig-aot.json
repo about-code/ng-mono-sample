@@ -16,7 +16,7 @@
         }
     },
     "angularCompilerOptions": {
-        "entryModule": "./packages/@foo/slush-ng-monorepo-sample-app/src/AppModule#AppModule",
+        "entryModule": "./packages/@foo/ng-mono-sample-app/src/AppModule#AppModule",
         "skipMetadataEmit": true
     }
 }

@@ -2,7 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 
 @Component({
-    selector: "slush-ng-monorepo-sample-app",
+    selector: "ng-mono-sample-app",
     templateUrl: "./AppComponent.html"
 })
 export class AppComponent implements OnInit {
