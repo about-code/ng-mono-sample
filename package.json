@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@foo/ng-mono-sample-project",
-  "version": "1.0.0-alpha.14",
+  "version": "1.0.0-alpha.15",
   "description": "Sample project generated with https://github.com/about-code/ng-mono",
   "dependencies": {
     "@angular/animations": "^5.2.0",
