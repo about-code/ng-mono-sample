@@ -1,6 +1,6 @@
 # @foo/slush-ng-monorepo-sample-project
 
-Sample project generated with https://github.com/about-code/slush-ng-monorepo
+Sample project generated with https://github.com/about-code/ng-mono
 
 ## Building and bundling an app from packages
 
