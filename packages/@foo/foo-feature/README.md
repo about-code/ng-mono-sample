@@ -2,43 +2,51 @@
 
 Demo of a feature package
 
-# How to consume in your app
+## Usage
 
-## Import via ECMAScript Module Syntax
+### Installation (package consumers)
 
+```
+npm install @foo/foo-feature
+```
+
+### Consuming the package (package consumers)
+
+Importing the API (assuming a class `Foo` being exported)
 ```
 import {Foo} from "@foo/foo-feature";
 ```
 
-## When bundling your app with Webpack...
+Depending on how the application which consumes the package will be built, additional steps might be necessary when using the package.
 
-Webpack will resolve ES-Module imports automatically.
+#### Bundling with [Webpack](https://webpack.js.org)
 
-## When bundling your app with Rollup...
+  Webpack doesn't require special configuration to resolve ES2015 import syntax. Just import the package like shown above.
 
-See [Rollup Docs](https://rollupjs.org/#using-rollup-with-npm) on how to use Rollup with npm packages.
+#### Bundling with [Rollup](https://rollupjs.org)
 
-## When loading an unbundled app in the browser via SystemJS module loader..
+  See Rollup Docs on how to use [Rollup with npm packages](https://rollupjs.org/#using-rollup-with-npm).
 
-We assume a directory structure
+#### Lazy loading the package with [SystemJS](https://github.com/systemjs/systemjs) module loader
+
+On the server we assume a filesystem for when the package was published in *Angular Package Format* (see package developer guide below):
+
 ```
-   ${WEB_ROOT}
-       |- node_modules
-       |       |-@foo
-       |              |- foo-feature
-       |                     |- dist
-       |                          |- @foo
-       |                                  |- foo-feature.es5.umd.js
-       |- index.html
+${WEB_ROOT}
+    |- node_modules
+    |       |-@foo
+    |              |- foo-feature
+    |                     |- dist
+    |                          |- @foo
+    |                                  |- foo-feature.es5.umd.js
+    |- index.html
 ```
-with `index.html` at the root of a directory which is served from a
-context root `/your-context-root`.  The SystemJS configuration in `index.html`
-may use the `map` configuration to map `@foo/foo-feature` to the UMD version
-of the lib.
+
+`index.html` is assumed to be at *document root*. The URL from which `index.html` is served is assumed to be `http://example.com/my-app`.  The SystemJS configuration in `index.html` may use the `map` configuration to map imports of `@foo/foo-feature` to the UMD bundle of the lib. SystemJS was configured via `baseURL` to resolve absolute paths relative to the URL `/my-app/node_modules`. That means `node_modules` must be within the document root but should contain production dependencies, only.
 
 ```javascript
 System.config({
-    baseURL: '/your-context-root/node_modules',
+    baseURL: '/my-app/node_modules',
     map: {
         '@foo/foo-feature': '@foo/foo-feature/dist/@foo/foo-feature.es5.umd.js'
     }
@@ -46,5 +54,22 @@ System.config({
 });
 ```
 
-# Further Reading
-- Building Angular Libraries (https://www.youtube.com/watch?v=unICbsPGFIA)
+### Building and publishing the package (package developers)
+
+> **Note:** These instructions assume the package is developed in its own
+repository. If it is developed within a monorepo the build instructions for the
+monorepo may describe an alternative workflow.
+
+There are two build options which you might choose from
+
+- `npm run tsc`
+
+  Transpiles the package sources with the TypeScript compiler (tsc) and produces a `/dist` folder with unbundled JavaScript, Type Declarations (d.ts) and Source Maps (.map).
+
+  This may be appropriate if you have a utility package with few requirements on build optimization. After building the package you may want to try `npm pack` first to see what will be published with `npm publish`.
+
+- `npm run ng-packagr`
+
+  Builds the package with [ng-packagr](https://github.com/dherges/ng-packagr/) and creates a `/dist` folder in Angular Package Format.
+
+  This may be appropriate if you have a utility package which you want to bundle for different consumption patterns like described in [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/edit?_escaped_fragment_&usp=embed_facebook) or if your package exports Angular framework concepts like `NgModule` or `NgComponent` classes. Run `npm pack` and `npm publish` *inside* the `/dist` folder.

@@ -1,12 +1,12 @@
 # @foo/ng-mono-sample-project
 
-Sample project generated with https://github.com/about-code/ng-mono
+Project generated with https://github.com/about-code/ng-mono
 
 ## Building and bundling an app from packages
 
-- Build and serve production build: `npm start`
-- Build and serve development build: `npm run debug`
-- Build production bundle: `npm run build`
+- Build optimized production bundle: `npm run build`
+- Build and serve optimized production build: `npm run build-serve`
+- Build and serve debuggable development build: `npm start`
 
 ### Building packages for reuse
 
@@ -39,3 +39,6 @@ Use `npm run lerna -- publish` to version packages (see [lernajs.io](https://ler
 
 - **Convention:** E2E test specs must end with `.e2e-spec.ts`
 - **Note:** To customize the setup edit `config/protractor.js`.
+
+## Further Reading
+- Building Angular Libraries (https://www.youtube.com/watch?v=unICbsPGFIA)
