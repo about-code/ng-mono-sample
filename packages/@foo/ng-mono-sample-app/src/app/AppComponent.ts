@@ -2,7 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 
 @Component({
-    selector: "ng-mono-sample-app",
+    selector: "ng-app",
     templateUrl: "./AppComponent.html"
 })
 export class AppComponent implements OnInit {

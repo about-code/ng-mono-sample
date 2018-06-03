@@ -58,6 +58,7 @@
   },
   "angularCompilerOptions": {
     "entryModule": "./packages/@foo/ng-mono-sample-app/src/AppModule#AppModule",
+    "enableResourceInlining": true,
     "skipMetadataEmit": true
   }
 }

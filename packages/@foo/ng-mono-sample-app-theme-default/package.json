@@ -1,6 +1,6 @@
 {
   "name": "@foo/ng-mono-sample-app-theme-default",
-  "version": "1.0.0-alpha.16",
+  "version": "1.0.0",
   "description": "Project generated with https://github.com/about-code/ng-mono",
   "main": "index.js",
   "scripts": {},
