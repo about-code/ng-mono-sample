@@ -17,13 +17,13 @@ try {
 // =============== SASS ===============
 const outputPath = path.resolve(__dirname, '../', 'dist');
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "[name].[hash].css",
     disable: process.env.NODE_ENV === "development"
 });
 // =============== WEBPACK ===============
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  devServer: serverConf,
+  serve: serverConf,
   entry: {
     'theme': './src/bundle-theme.ts',
     'polyfills': './src/bundle-polyfills.ts',

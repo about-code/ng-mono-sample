@@ -4,7 +4,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
-import {FeatureModule} from "@foo/foo-feature";
+
 import {RoutesModule} from "./RoutesModule";
 import {AppComponent} from "./app/AppComponent";
 import {HomeViewComponent} from "./home-view/HomeViewComponent";
@@ -17,7 +17,6 @@ import {HomeViewComponent} from "./home-view/HomeViewComponent";
         , RouterModule
         , ReactiveFormsModule
         , RoutesModule
-        , FeatureModule
     ],
     declarations: [
         AppComponent
