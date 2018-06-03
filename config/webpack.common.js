@@ -25,9 +25,7 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   devServer: serverConf,
   entry: {
-    'theme': './src/bundle-theme.ts',
     'polyfills': './src/bundle-polyfills.ts',
-    'vendor': './src/bundle-vendor.ts'
   },
   resolve: {
     extensions: ['.ts', '.js'],

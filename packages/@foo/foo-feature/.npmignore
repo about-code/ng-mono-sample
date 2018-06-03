@@ -1,6 +1,0 @@
-*.gitignore.*
-src
-!dist/src
-index.ts
-tsconfig.json
-ng-package.json
