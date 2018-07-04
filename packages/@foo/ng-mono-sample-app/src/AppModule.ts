@@ -1,14 +1,14 @@
 // Modules
-import {NgModule} from "@angular/core";
-import {BrowserModule} from "@angular/platform-browser";
-import {CommonModule} from "@angular/common";
-import {RouterModule} from "@angular/router";
-import {ReactiveFormsModule} from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
+import { ReactiveFormsModule } from "@angular/forms";
+import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule } from "@angular/router";
+import { FeatureModule } from "@foo/foo-feature";
+import { AppComponent } from "./app/AppComponent";
+import { HomeViewComponent } from "./home-view/HomeViewComponent";
+import { RoutesModule } from "./RoutesModule";
 
-import {RoutesModule} from "./RoutesModule";
-import {AppComponent} from "./app/AppComponent";
-import {HomeViewComponent} from "./home-view/HomeViewComponent";
-import {FeatureModule} from "@foo/foo-feature";
 // :: import {{{comp_class}}} from "./{{comp_selector}}/{{comp_file}}";
 
 @NgModule({
